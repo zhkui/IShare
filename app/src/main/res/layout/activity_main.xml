@@ -3,14 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_margin="10dp"
+    android:background="@color/colotBackGround"
     tools:context=".activity.MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/red"
+        android:text="ISHARE" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/home_tab_container_panding">
+
+        <TextView
+            android:id="@+id/tab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="HOME" />
+        <TextView
+            android:id="@+id/tab_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tab_home"
+            android:layout_marginLeft="@dimen/home_tab_margin"
+            android:text="ANDROID" />
+        <TextView
+            android:id="@+id/tab_ios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tab_android"
+            android:layout_marginLeft="@dimen/home_tab_margin"
+            android:text="IOS" />
+        <TextView
+            android:id="@+id/tab_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tab_ios"
+            android:layout_marginLeft="@dimen/home_tab_margin"
+            android:text="VIDEO" />
+    </RelativeLayout>
 </RelativeLayout>

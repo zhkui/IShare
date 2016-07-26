@@ -6,8 +6,9 @@
     tools:context="com.zhakui.ishare.activity.LaunchActivity">
 
     <ImageView
+        android:id="@+id/launchImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/launch"/>
+        android:background="@drawable/launch"/>
 </RelativeLayout>
