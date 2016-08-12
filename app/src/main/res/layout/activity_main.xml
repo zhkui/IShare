@@ -50,4 +50,12 @@
             android:layout_marginLeft="@dimen/home_tab_margin"
             android:text="VIDEO" />
     </RelativeLayout>
+    <fragment
+        android:name="com.zhakui.ishare.fragment.HomeFragment"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/home_tab_container_panding"
+        android:layout_below="@+id/title"
+        tools:layout="@layout/fragment_home" />
 </RelativeLayout>
